@@ -59,6 +59,10 @@ if (process.platform === 'win32') {
   initState = require('./darwinInit')()
 }
 
+console.log('QUITTING BEFORE ITS LOADED')
+
+return
+
 const electron = require('electron')
 const app = electron.app
 const ipcMain = electron.ipcMain
